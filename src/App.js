@@ -18,7 +18,7 @@ function App() {
      <Router>
         <BreakpointProvider>
             <Switch>
-               <Route exact path='/Trivia_Game_React'>
+               <Route exact path='/Trivia_Game_React/'>
                   <Game />
                </Route>
                <Route path='/game'>

@@ -32,7 +32,7 @@ export default function Game(){
 
    function playAgain(){
       setIsLoading(true)
-      history.push('/game');
+      history.push('/Trivia_Game_React/');
       window.location.reload();
    }
 
@@ -84,7 +84,7 @@ export default function Game(){
       document.body.style.cursor = 'default';
       return (
          <>
-            <Route exact path='/Trivia_Game_React'>
+            <Route exact path='/Trivia_Game_React/'>
                <CategoryPick handleClick={handleClick} categoryList={categoryList} />
             </Route>
             <Route path='/game/over'>
