@@ -84,7 +84,7 @@ export default function Game(){
       document.body.style.cursor = 'default';
       return (
          <>
-            <Route exact path='/'>
+            <Route exact path='/Trivia_Game_React'>
                <CategoryPick handleClick={handleClick} categoryList={categoryList} />
             </Route>
             <Route path='/game/over'>
