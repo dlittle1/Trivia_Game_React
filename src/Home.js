@@ -14,10 +14,10 @@ export default function Home(){
       <>
             <Breakpoint m down>
                {!login ?
-                  <div className="home">
+                  <div className="home-mobile">
                      <div className='logo-home'>
-                        <img className="logo-img" src={require('./assets/music-logo.png')}/><br />
-                        <h1>Musicly</h1>
+                        <h1>TRIVIA</h1>
+                        <h1>Royale</h1>
                      </div>
                      <button className='login-mobile' onClick={handleLoginPage}><h2>Log In</h2></button>
                   </div>
@@ -28,8 +28,8 @@ export default function Home(){
             <Breakpoint l up>
                <div className="home">
                   <div className='logo-home'>
-                     <img className="logo-img" src={require('./assets/music-logo.png')}/><br />
-                     <h1>Musicly</h1>
+                     <h1>TRIVIA</h1>
+                     <h1>Royale</h1>
                   </div>
                   <div className="login">
                      <LoginForm info={{id: "", username: "", password: ""}} {...handleLoginPage}/>

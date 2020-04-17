@@ -1,29 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Erica+One&display=swap');
 body {
-   background-color: #341931;
+   background: #C04848;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5AA7E3, #6f86d6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5AA7E3, #6f86d6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-.logo-img {
-   width: 200px;
-   margin-top: 100px;
-}
 
-.home {
+
+.home-mobile, .home {
    text-align: center;
    color: white;
 }
 
 .logo-home > h1{
-   margin-bottom: 17%;
    font-size: 60px;
+   font-family: 'Erica One', cursive;
+   letter-spacing: 3px;
 }
-button {
-   width: 300px;
-   height: 50px;
-   background-color: #341931;
-   color: white;
-   border-radius: 50px;
-   border-width: 2px;
-}
+
 
 .login-form{
    color: white;
@@ -51,7 +46,7 @@ button {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  background-color: #341931;
+  background-color: rgba(255,255,255,0);
   color: white;
   border-top: 0;
   border-right: 0;
@@ -73,7 +68,10 @@ button {
    text-align: center
 }
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 770px){
+   .home-mobile {
+      display: none
+   }
    .home {
       display: grid;
       grid-template-columns: 1fr 1fr
