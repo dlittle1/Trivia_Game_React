@@ -5,40 +5,30 @@ background: -webkit-linear-gradient(to right, #5AA7E3, #6f86d6);  /* Chrome 10-2
 background: linear-gradient(to right, #5AA7E3, #6f86d6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-
-
-
 .home-mobile, .home {
    text-align: center;
    color: white;
 }
-
 .logo-home > h1{
    font-size: 60px;
    font-family: 'Erica One', cursive;
    letter-spacing: 3px;
 }
-
-
 .login-form{
    color: white;
    margin: 2%;
 }
-
 .title {
    margin-top: 60px;
 }
-
 .form-inputs {
    position: relative;
    top: 0;
 }
-
 .form-inputs > button {
    margin-top: 50px;
    width: 100%;
 }
-
 .form-inputs > input{
   width: 100%;
   padding: 12px 20px;
@@ -53,21 +43,17 @@ background: linear-gradient(to right, #5AA7E3, #6f86d6); /* W3C, IE 10+/ Edge, F
   border-left: 0;
   border-radius: 0;
 }
-
 .form-inputs > input::placeholder{
    color: white;
    font-size: 17px;
 }
-
 .login-form {
    width: 90%;
 }
-
 .form-inputs > .title {
    margin-bottom: 125px;
    text-align: center
 }
-
 @media screen and (min-width: 770px){
    .home-mobile {
       display: none
@@ -103,7 +89,6 @@ background: linear-gradient(to right, #5AA7E3, #6f86d6); /* W3C, IE 10+/ Edge, F
       border-radius: 50px;
       border-width: 2px;
    }
-
    .title {
       font-size: 50px;
    }

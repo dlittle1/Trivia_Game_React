@@ -5,27 +5,25 @@ import "react-virtualized-select/styles.css"
 import Select from 'react-virtualized-select'
 
 export default function CategoryPick(props){
-   const [selectedCategory, setSelectedCategory] = useState({label: "Select Category", value: ""})
-   const [selectedDifficulty, setSelectedDifficulty] = useState({label: "Select Difficulty", value: "medium"})
-   const {error, categoryList, handleClick} = props
-   const difficultyList = ["Easy", "Medium", "Hard"]
+   const [selectedCategory, setSelectedCategory] = useState({label: "Select Category", value: ""});
+   const [selectedDifficulty, setSelectedDifficulty] = useState({label: "Select Difficulty", value: "medium"});
+   const {error, categoryList, handleClick} = props;
+   const difficultyList = ["Easy", "Medium", "Hard"];
    const categoryOptions = Array.from(categoryList, (categoryList, index) => ({
       label: categoryList.name,
       value: categoryList.id
-   }))
-   console.log(categoryOptions);
+   }));
    const difficultyOptions = difficultyList.map((difficulty) => ({
       label: difficulty,
       value: difficulty.toLowerCase()
-   }))
+   }));
 
    function handleCategoryChange(e){
-      console.log(e);
-      setSelectedCategory(e)
+      setSelectedCategory(e);
    }
 
    function handleDifficultyChange(e){
-      setSelectedDifficulty(e)
+      setSelectedDifficulty(e);
    }
 
    return (

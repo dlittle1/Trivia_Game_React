@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import { Form } from 'semantic-ui-react'
 import {useParams, useHistory} from 'react-router-dom'
 import { Html5Entities } from 'html-entities';
 
@@ -9,17 +8,26 @@ export default function Question(props){
    const [answerOptions, setAnswerOptions] = useState([]);
    const [selectedAnswer, setSelectedAnswer] = useState();
    const [isLoading, setIsLoading] = useState(false);
-   const questionObj = props.questionList[id - 1];
+   const questionList = JSON.parse(localStorage.getItem('questionList'));
+   const questionObj = questionList[id - 1];
    const questionText = htmlEntities.decode(questionObj.question);
    const history = useHistory();
+   const health = JSON.parse(localStorage.getItem('health'));
+   const score = localStorage.getItem('score');
+
    useEffect(() => {
       setIsLoading(true)
+      // get all incorrect answers
       let options = questionObj.incorrect_answers
+      // push in the correct answer to get a full answers list
       options.push(questionObj.correct_answer)
+      // shuffle those answers to give variety to the options in all questions
       options = shuffle(options)
+      // give those options to the user
       setAnswerOptions(options)
       setIsLoading(false)
    },[id])
+
    //found at (https://bost.ocks.org/mike/shuffle/) great implementation of a random shuffle
    function shuffle(array) {
       var currentIndex = array.length, temporaryValue, randomIndex;
@@ -37,38 +45,41 @@ export default function Question(props){
       }
       return array;
    }
+
    function nextQuestion(){
-      history.push(`/game/questions/${Number(id) + 1}`)
+      history.push(`/questions/${Number(id) + 1}`)
    }
 
    function handleClick(e){
-      console.log(e);
       setSelectedAnswer(e)
    }
+
    function handleSubmit(e){
       e.preventDefault();
-
-      console.log(props.score);
       if (selectedAnswer === questionObj.correct_answer){
-         props.setScore(prevScore => prevScore + 1)
+         let newScore = score;
+         newScore++;
+         localStorage.setItem('score', newScore);
       }
       else {
-         if (props.health.length === 1){
-            props.setHealth(props.health.slice(1))
+         if (health.length === 1){
+            let newHealth = health.slice(1);
+            localStorage.setItem('health', JSON.stringify(newHealth));
             history.push('/game/over');
             return
          }else {
-            props.setHealth(props.health.slice(1))
+            let newHealth = health.slice(1);
+            localStorage.setItem('health', JSON.stringify(newHealth));
          }
       }
-      if (Number(id) === props.questionList.length){
+      if (Number(id) === questionList.length){
          history.push(`/game/over`)
       }else {
          setTimeout(nextQuestion, 50)
       }
 
    }
-
+   console.log(questionList);
    if (isLoading)
    {
       return(
@@ -82,7 +93,7 @@ export default function Question(props){
    }
    else
    {
-      const hearts = props.health.map(heart => {
+      const hearts = health.map(heart => {
          return (<h1 style={{display: "inline"}}>{heart}</h1>)
       })
 
