@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Trivia_Game_React/static/css/main.10c38bf3.chunk.css",
-    "main.js": "/Trivia_Game_React/static/js/main.6d032f95.chunk.js",
-    "main.js.map": "/Trivia_Game_React/static/js/main.6d032f95.chunk.js.map",
+    "main.css": "/Trivia_Game_React/static/css/main.4fff77d0.chunk.css",
+    "main.js": "/Trivia_Game_React/static/js/main.d867c273.chunk.js",
+    "main.js.map": "/Trivia_Game_React/static/js/main.d867c273.chunk.js.map",
     "runtime-main.js": "/Trivia_Game_React/static/js/runtime-main.0fcc2d12.js",
     "runtime-main.js.map": "/Trivia_Game_React/static/js/runtime-main.0fcc2d12.js.map",
     "static/css/2.32264741.chunk.css": "/Trivia_Game_React/static/css/2.32264741.chunk.css",
-    "static/js/2.d975e3e3.chunk.js": "/Trivia_Game_React/static/js/2.d975e3e3.chunk.js",
-    "static/js/2.d975e3e3.chunk.js.map": "/Trivia_Game_React/static/js/2.d975e3e3.chunk.js.map",
+    "static/js/2.6c2aca9c.chunk.js": "/Trivia_Game_React/static/js/2.6c2aca9c.chunk.js",
+    "static/js/2.6c2aca9c.chunk.js.map": "/Trivia_Game_React/static/js/2.6c2aca9c.chunk.js.map",
     "index.html": "/Trivia_Game_React/index.html",
-    "precache-manifest.c90e2cd3c713c7332cdc6739e2dec315.js": "/Trivia_Game_React/precache-manifest.c90e2cd3c713c7332cdc6739e2dec315.js",
+    "precache-manifest.15597dd66ccaed09fc6a92e2d43255c8.js": "/Trivia_Game_React/precache-manifest.15597dd66ccaed09fc6a92e2d43255c8.js",
     "service-worker.js": "/Trivia_Game_React/service-worker.js",
     "static/css/2.32264741.chunk.css.map": "/Trivia_Game_React/static/css/2.32264741.chunk.css.map",
-    "static/css/main.10c38bf3.chunk.css.map": "/Trivia_Game_React/static/css/main.10c38bf3.chunk.css.map",
-    "static/js/2.d975e3e3.chunk.js.LICENSE.txt": "/Trivia_Game_React/static/js/2.d975e3e3.chunk.js.LICENSE.txt",
+    "static/css/main.4fff77d0.chunk.css.map": "/Trivia_Game_React/static/css/main.4fff77d0.chunk.css.map",
+    "static/js/2.6c2aca9c.chunk.js.LICENSE.txt": "/Trivia_Game_React/static/js/2.6c2aca9c.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/Trivia_Game_React/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0fcc2d12.js",
     "static/css/2.32264741.chunk.css",
-    "static/js/2.d975e3e3.chunk.js",
-    "static/css/main.10c38bf3.chunk.css",
-    "static/js/main.6d032f95.chunk.js"
+    "static/js/2.6c2aca9c.chunk.js",
+    "static/css/main.4fff77d0.chunk.css",
+    "static/js/main.d867c273.chunk.js"
   ]
 }
